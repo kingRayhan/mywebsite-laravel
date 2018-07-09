@@ -1,0 +1,78 @@
+.home-page{
+	background: #000;
+	min-height: 100vh;
+}
+.herowrapper{
+	min-height: 100vh;
+	position: relative;
+
+	&:before{
+		background: url(https://scontent.fdac24-1.fna.fbcdn.net/v/t31.0-8/13640810_1058347164252808_8313733449162562986_o.jpg?_nc_cat=0&oh=2a3a3cb58d131396063ea3af98c6a2a6&oe=5BEB2BA6) no-repeat scroll right center;
+		height: 100%;
+		width: 50%;
+		top: 0;
+		position: absolute;
+		right: 0;
+		content: '';
+	}
+	&:after{
+		height: 100%;
+		width: 50%;
+		top: 0;
+		position: absolute;
+		right: 0;
+		// content: 'resume';
+		// background: rgba(0,0,0,.2);
+
+
+		// opacity: 0.41;
+		// font-family: LemonMilk;
+		// font-size: 12rem;
+		// font-weight: normal;
+		// font-style: normal;
+		// font-stretch: normal;
+		// line-height: 1.42;
+		// letter-spacing: normal;
+		// text-align: right;
+		// color: #ffffff;
+
+		// transform: rotate(-90deg);
+	}
+}
+.hero-content{
+	z-index: 1;
+	position: relative;
+	.hi{
+		 font-family: LemonMilk;
+		 font-size: 4rem;
+		 font-weight: normal;
+		 font-style: normal;
+		 font-stretch: normal;
+		 line-height: 1.41;
+		 letter-spacing: normal;
+		 text-align: left;
+		 color: #ecf0f1;
+	}
+	.name{
+		font-family: EdoSZ;
+		font-size: 12rem;
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 1.15;
+		letter-spacing: normal;
+		text-align: left;
+		color: #ffffff;
+	}
+	.designation{
+		font-family: Oswald;
+		 font-size: 2rem;
+		 font-weight: normal;
+		 font-style: italic;
+		 font-stretch: normal;
+		 line-height: 1.36;
+		 letter-spacing: normal;
+		 text-align: left;
+		 color: #ffffff;
+	}
+}
