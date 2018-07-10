@@ -5,7 +5,6 @@
 	z-index: 1;
 	.logo{
 		--dimention: 65px;
-
 		width: var(--dimention);
 		height: var(--dimention);
 		border: solid 5px #ffffff;
@@ -47,7 +46,6 @@
 			letter-spacing: normal;
 			text-align: left;
 			color: #ecf0f1;
-			// transform: rotate(90deg);
 		}
 		.line{
 			width: 0;
