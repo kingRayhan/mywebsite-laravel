@@ -8,17 +8,22 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>Rayhan | Fullstack web developer</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
-
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+
+    <!-- Facebook OpenGraph Metas -->
+    <meta property="og:type"               content="article" />
+    <meta property="og:title"              content="King Rahan" />
+    <meta property="og:description"        content="Fullstack web developer" />
+    <meta property="og:image"              content="og.png" />
+
+
 </head>
 <body>
     <div id="app">
