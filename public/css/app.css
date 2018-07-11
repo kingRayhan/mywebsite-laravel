@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);/*!
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700);/*!
  * Bootstrap v4.1.1 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
  * Copyright 2011-2018 Twitter, Inc.
@@ -10411,6 +10411,24 @@ a.text-dark:focus {
   }
 }
 
+/* Fonts */
+
+@font-face {
+  font-family: 'Edo SZ';
+  src: url(/fonts/EdoSZ.eot?f2f7f6f20448fe16f8d501c0523c19b8);
+  src: url(/fonts/EdoSZ.eot?f2f7f6f20448fe16f8d501c0523c19b8) format("embedded-opentype"), url(/fonts/EdoSZ.woff2?7a529b91a006d7dc9d20c0d6682f19a1) format("woff2"), url(/fonts/EdoSZ.woff?4c87d779789f0c14aa0481b822509abe) format("woff"), url(/fonts/EdoSZ.ttf?dbf2823c20ad346bfcf118086ce6d839) format("truetype"), url(/fonts/EdoSZ.svg?d29c6e62f0be160741b3ba7b1513123d) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lemon/Milk';
+  src: url(/fonts/LemonMilk.eot?3c4c8f67503f3837e098fd204f54b3ac);
+  src: url(/fonts/LemonMilk.eot?3c4c8f67503f3837e098fd204f54b3ac) format("embedded-opentype"), url(/fonts/LemonMilk.woff2?64d246b980cb3044a3916fd0922a38ff) format("woff2"), url(/fonts/LemonMilk.woff?a86e58701cf46d92752efa6d4f3d0c84) format("woff"), url(/fonts/LemonMilk.ttf?766d91b7f454baa4bc36b5c9aa7def83) format("truetype"), url(/fonts/LemonMilk.svg?d5966066bf0d8f90a95d95dffbdf7819) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 html {
   font-size: 16px;
 }
@@ -10418,15 +10436,32 @@ html {
 .home-page {
   background: #000;
   min-height: 100vh;
+  position: relative;
 }
 
 .herowrapper {
   min-height: 100vh;
   position: relative;
+  padding-left: 100px;
+}
+
+@media screen and (max-width: 767px) {
+  .herowrapper {
+    padding-left: 0;
+  }
+
+  .herowrapper:after {
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
 }
 
 .herowrapper:before {
-  background: url(https://scontent.fdac24-1.fna.fbcdn.net/v/t31.0-8/13640810_1058347164252808_8313733449162562986_o.jpg?_nc_cat=0&oh=2a3a3cb58d131396063ea3af98c6a2a6&oe=5BEB2BA6) no-repeat scroll right center;
+  background: url(/images/rayhan.jpg?e8c7d60d4bcef812bfdec3f3cbfeb5b5) no-repeat scroll right center;
   height: 100%;
   width: 50%;
   top: 0;
@@ -10435,12 +10470,21 @@ html {
   content: '';
 }
 
-.herowrapper:after {
-  height: 100%;
-  width: 50%;
-  top: 0;
-  position: absolute;
-  right: 0;
+@media screen and (max-width: 1300px) {
+  .herowrapper:before {
+    background: url(/images/rayhan-tablet.jpg?2838feaad8bab4148cd53c9bf82d6211) no-repeat scroll right center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .herowrapper:before {
+    width: 100%;
+  }
+}
+
+.herowrapper .container {
+  position: relative;
+  z-index: 2;
 }
 
 .hero-content {
@@ -10448,8 +10492,20 @@ html {
   position: relative;
 }
 
+@media screen and (max-width: 640px) {
+  .hero-content {
+    padding-left: 40px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .hero-content {
+    padding-left: 55px;
+  }
+}
+
 .hero-content .hi {
-  font-family: LemonMilk;
+  font-family: 'Lemon/Milk';
   font-size: 4rem;
   font-weight: normal;
   font-style: normal;
@@ -10461,7 +10517,7 @@ html {
 }
 
 .hero-content .name {
-  font-family: EdoSZ;
+  font-family: 'Edo SZ';
   font-size: 12rem;
   font-weight: normal;
   font-style: normal;
@@ -10472,8 +10528,32 @@ html {
   color: #ffffff;
 }
 
+@media screen and (max-width: 991px) {
+  .hero-content .name {
+    font-size: 10rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .hero-content .name {
+    font-size: 120px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .hero-content .name {
+    font-size: 100px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .hero-content .name {
+    font-size: 70px;
+  }
+}
+
 .hero-content .designation {
-  font-family: Oswald;
+  font-family: 'Oswald', sans-serif;
   font-size: 2rem;
   font-weight: normal;
   font-style: italic;
@@ -10487,8 +10567,8 @@ html {
 .v-menu {
   position: absolute;
   top: 25px;
-  left: 25px;
-  z-index: 1;
+  left: 15px;
+  z-index: 2;
 }
 
 .v-menu .logo {
