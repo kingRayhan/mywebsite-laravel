@@ -32,6 +32,13 @@ p{
     background: var(--secondary);
 }
 
+.VueCarousel-slide{
+	img{ width: 100%; }
+}
+.VueCarousel-pagination{
+	display: none;
+}
+
 @import 'fonts';
 @import 'hero';
 @import 'about';
