@@ -23,6 +23,7 @@ try {
 window.axios = require('axios');
 
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+// window.axios.defaults.headers.common["Access-Control-Allow-Origin"] = "http://127.0.0.1:8000";
 
 /**
  * Next we will register the CSRF Token as a common header with Axios so that

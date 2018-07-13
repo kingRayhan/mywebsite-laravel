@@ -1,9 +1,38 @@
-// Bootstrap
 @import '~bootstrap/scss/bootstrap';
 html{
 	font-size: 16px;
 }
 
+:root{
+	--secondary: #d4d4a0;
+	--white: #FFF;
+	--lightWhite: #dcdcdc;
+	--lightGrey: #cbcbcb;
+}
+
+a{
+	color: #FFF;
+	transition: 300ms;
+	&:hover{
+		color: var(--secondary) !important;
+		text-decoration: none;
+	}
+}
+p{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.2rem;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 2.06;
+	letter-spacing: normal;
+}
+::selection {
+    color: var(--white); 
+    background: var(--secondary);
+}
+
+@import 'fonts';
 @import 'hero';
 @import 'about';
 @import 'v-menu';

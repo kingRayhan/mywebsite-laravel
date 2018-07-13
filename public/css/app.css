@@ -1,4 +1,4 @@
-/*!
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700);@import url(https://fonts.googleapis.com/css?family=Open+Sans);/*!
  * Bootstrap v4.1.1 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
  * Copyright 2011-2018 Twitter, Inc.
@@ -10415,6 +10415,60 @@ html {
   font-size: 16px;
 }
 
+:root {
+  --secondary: #d4d4a0;
+  --white: #FFF;
+  --lightWhite: #dcdcdc;
+  --lightGrey: #cbcbcb;
+}
+
+a {
+  color: #FFF;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+a:hover {
+  color: var(--secondary) !important;
+  text-decoration: none;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.06;
+  letter-spacing: normal;
+}
+
+::-moz-selection {
+  color: var(--white);
+  background: var(--secondary);
+}
+
+::selection {
+  color: var(--white);
+  background: var(--secondary);
+}
+
+@font-face {
+  font-family: 'Edo SZ';
+  src: url(/fonts/EdoSZ.eot?f2f7f6f20448fe16f8d501c0523c19b8);
+  src: url(/fonts/EdoSZ.eot?f2f7f6f20448fe16f8d501c0523c19b8) format("embedded-opentype"), url(/fonts/EdoSZ.woff2?7a529b91a006d7dc9d20c0d6682f19a1) format("woff2"), url(/fonts/EdoSZ.woff?4c87d779789f0c14aa0481b822509abe) format("woff"), url(/fonts/EdoSZ.ttf?dbf2823c20ad346bfcf118086ce6d839) format("truetype"), url(/fonts/EdoSZ.svg?d29c6e62f0be160741b3ba7b1513123d) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lemon/Milk';
+  src: url(/fonts/LemonMilk.eot?3c4c8f67503f3837e098fd204f54b3ac);
+  src: url(/fonts/LemonMilk.eot?3c4c8f67503f3837e098fd204f54b3ac) format("embedded-opentype"), url(/fonts/LemonMilk.woff2?64d246b980cb3044a3916fd0922a38ff) format("woff2"), url(/fonts/LemonMilk.woff?a86e58701cf46d92752efa6d4f3d0c84) format("woff"), url(/fonts/LemonMilk.ttf?766d91b7f454baa4bc36b5c9aa7def83) format("truetype"), url(/fonts/LemonMilk.svg?d5966066bf0d8f90a95d95dffbdf7819) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .home-page {
   background: #000;
   min-height: 100vh;
@@ -10553,7 +10607,7 @@ html {
 
 .about-me .section-title .hash-sign {
   opacity: 0.24;
-  font-family: LemonMilk;
+  font-family: 'Lemon/Milk';
   font-size: 12rem;
   font-weight: normal;
   font-style: normal;
@@ -10564,13 +10618,9 @@ html {
 }
 
 .about-me .section-title .title {
-  font-family: LemonMilk;
+  font-family: 'Lemon/Milk';
   font-size: 2rem;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.42;
-  letter-spacing: normal;
   color: #cbcbcb;
   position: absolute;
   top: 70px;
@@ -10578,27 +10628,12 @@ html {
 }
 
 .about-me .about-me__text p {
-  font-family: OpenSans;
-  font-size: 1.2rem;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 2.06;
-  letter-spacing: normal;
-  text-align: left;
-  color: #dcdcdc;
+  color: var(--lightWhite);
 }
 
 .brack-btn {
   font-family: Sk-Modernist;
   font-size: 19px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.21;
-  letter-spacing: normal;
-  text-align: left;
-  color: #d4d4a0;
   margin-right: 15px;
 }
 
@@ -10668,7 +10703,6 @@ html {
 }
 
 .v-menu nav a {
-  font-family: OpenSans;
   font-size: 1.12rem;
   font-weight: bold;
   font-style: normal;
