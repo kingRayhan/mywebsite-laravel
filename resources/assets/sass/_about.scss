@@ -12,6 +12,11 @@
 			line-height: 1.42;
 			letter-spacing: normal;
 			color: #ffffff;
+
+			@media screen and (max-width: 768px)
+			{
+				display: none;
+			}
 		}
 		.title{
 			font-family: 'Lemon/Milk';
@@ -22,6 +27,12 @@
 			position: absolute;
 			top: 70px;
 			right: 50px;
+
+			@media screen and (max-width: 768px)
+			{
+				position: static;
+				text-align: left;
+			}
 		}
 	}
 	.about-me__text{

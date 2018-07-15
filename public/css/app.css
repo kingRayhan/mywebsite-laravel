@@ -10625,6 +10625,12 @@ p {
   color: #ffffff;
 }
 
+@media screen and (max-width: 768px) {
+  .about-me .section-title .hash-sign {
+    display: none;
+  }
+}
+
 .about-me .section-title .title {
   font-family: 'Lemon/Milk';
   font-size: 2rem;
@@ -10633,6 +10639,13 @@ p {
   position: absolute;
   top: 70px;
   right: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .about-me .section-title .title {
+    position: static;
+    text-align: left;
+  }
 }
 
 .about-me .about-me__text p {

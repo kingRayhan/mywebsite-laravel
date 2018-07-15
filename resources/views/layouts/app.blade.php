@@ -9,9 +9,10 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>Rayhan | Fullstack web developer</title>
+    
+    <link rel="stylesheet" href="{{ asset('owl-carousel/assets/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('owl-carousel/assets/owl.theme.default.min.css') }}">
 
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -29,5 +30,8 @@
     <div id="app">
         @yield('content')
     </div>
+    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('owl-carousel/owl.carousel.min.js') }}"></script>
+    <script src="{{ asset('js/js-plugin.js') }}"></script>
 </body>
 </html>
