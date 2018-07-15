@@ -10,6 +10,7 @@ Vue.component('instagram-gallery', require('./components/instagram-gallery.vue')
 
 
 Vue.component('slider', require('./components/carousel.vue'))
+Vue.component('loader', require('./components/loader'))
 
 import router from './router' // routes
 
